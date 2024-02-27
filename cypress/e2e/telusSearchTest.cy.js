@@ -7,7 +7,7 @@ describe("Test search functionality", () => {
     // click on the search icon.
     cy.get("#search-button").click();
     // type internet in the search input.
-    cy.get('[data-test="search-input"]').type("internet");
+    cy.get('[data-test="search-button"]').type("internet");
     // assert that the 3rd search option in dropdown contains the word 'internet'.
     cy.get(".sc-lizKOf > :nth-child(3) > .sc-ggpjZQ")
       .invoke("text")
